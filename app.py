@@ -6,14 +6,14 @@ import time
 from sklearn.datasets import fetch_california_housing
 from sklearn.ensemble import RandomForestRegressor
 st.title('🏠 House Price prediction using ML')
-st.image('https://i.pinimg.com/originals/f1/be/c8/f1bec81e20d80cd36c82379af920a4e9.gif')
+st.image('https://i.pinimg.com/originals/d3/18/13/d3181322e4522cf897fa8c1a038c6a2d.gif')
 
 df = pd.read_csv('house_data.csv')
 X = df.iloc[:,:-3]
 y = df.iloc[:,-1]
 
 st.sidebar.title('🏠 Select House features')
-st.sidebar.image('https://i.pinimg.com/originals/f1/be/c8/f1bec81e20d80cd36c82379af920a4e9.gif')
+st.sidebar.image('https://i.pinimg.com/originals/d3/18/13/d3181322e4522cf897fa8c1a038c6a2d.gif')
 all_value = []
 for i in X:
   min_value = int(X[i].min())
@@ -41,4 +41,5 @@ with st.spinner('Predicting House price'):
 msg = f'''House price is: $ {round(house_price*100000,2)}'''
 st.success(msg)
 
-st.markdown('''**Design and Developed by: Ankush verma**''')
+st.markdown('''**Design and Developed by: Aditya Gupta**''')
+
